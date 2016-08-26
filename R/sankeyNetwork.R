@@ -41,6 +41,8 @@
 #' browser on the client so don't push it too high.
 #' @param sinksRight boolean. If true, all nodes without target will be sink to 
 #' the right. Otherwise, it is placed next to their source.
+#' @param xPos character string specifying the xPos in the \code{Nodes}.
+#' data frame so as to force xPos for particular set of nodes.
 #'
 #' @examples
 #' \dontrun{

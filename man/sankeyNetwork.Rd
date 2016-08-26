@@ -12,7 +12,7 @@ sankeyNetwork(Links, Nodes, Source, Target, Value, NodeID, NodeGroup = NodeID,
   LinkGroup = NULL, units = "", colourScale = JS("d3.scale.category20()"),
   fontSize = 7, fontFamily = NULL, nodeWidth = 15, nodePadding = 10,
   margin = NULL, height = NULL, width = NULL, iterations = 32,
-  sinksRight = TRUE)
+  sinksRight = TRUE, xPos = NULL)
 }
 \arguments{
 \item{Links}{a data frame object with the links between the nodes. It should
@@ -74,6 +74,9 @@ browser on the client so don't push it too high.}
 
 \item{sinksRight}{boolean. If true, all nodes without target will be sink to 
 the right. Otherwise, it is placed next to their source.}
+
+\item{xPos}{character string specifying the xPos in the \code{Nodes}.
+data frame so as to force xPos for particular set of nodes.}
 }
 \description{
 Create a D3 JavaScript Sankey diagram
